@@ -20,6 +20,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+
     fetch(
       `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE_ID}/Default`,
       {
@@ -33,7 +34,7 @@ function App() {
         setTodoList(data.records);
         setIsLoading(false);
       });
-  }, []);
+
 
   useEffect(() => {
     if (isLoading === false) {
