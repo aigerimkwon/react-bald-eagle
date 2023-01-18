@@ -10,6 +10,7 @@ const TodoList = ({ todoList, onRemoveTodo }) => {
             <TodoListItem
               key={todo.id}
               todo={todo}
+              title={todo.title}
               onRemoveTodo={onRemoveTodo}
             />
           );
