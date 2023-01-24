@@ -5,12 +5,11 @@ const TodoList = ({ todoList, onRemoveTodo }) => {
   return (
     <div>
       <ul>
-        {todoList.map((todo) => {
+        {todoList?.map((todo) => {
           return (
             <TodoListItem
               key={todo.id}
               todo={todo}
-              title={todo.title}
               onRemoveTodo={onRemoveTodo}
             />
           );
