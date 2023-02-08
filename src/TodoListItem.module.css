@@ -1,0 +1,31 @@
+.ListItem {
+    color:#213633;
+    list-style-type: none;
+    text-decoration: underline;
+    text-decoration-color: #aec4aa;
+}
+
+.button {
+    position:relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    background-color: #aec4aa;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
+}
+.button::before, 
+.button::after{
+    position:absolute;
+    content: "";
+    z-index: -1;
+}
+.button:hover {
+    box-shadow: inset -2.5em 0 0 0 #202d3f, inset 2.5em 0 0 0  #202d3f;
+    color: #fbe4cc;
+}
+input:focus {
+    outline-color: white;
+}
