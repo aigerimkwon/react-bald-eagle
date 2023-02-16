@@ -1,29 +1,80 @@
+
+#light {
+    background-color: #fbfcff;
+    background-image: linear-gradient(to bottom right, #fbfcff, #e1edea);
+}
+#dark {
+    background-color: #0b1e38;
+    background-image: linear-gradient(to bottom right, #192c43, #0b1e38);
+}
+.App {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Salsa', cursive;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+/* "Todo list" */
 h4 { 
-    text-align: left;
-    color: #fed090;
+    color: #fffeff;
     margin: 0;
+    font-family: 'Princess Sofia', cursive;
 }
 
+#light .paper {
+    background-color: #fbfcff;
+}
+#dark .paper {
+    background-color:  #0b1e38;
+}
 .paper {
-    background-color: #fbe4cc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: center;
+    max-width: 430px;
     padding: 0.5rem;
     border-radius: 12px;
     margin: 0;
-    }
-
+    
+}
 .board {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height:100%;
-    width: 75%;
+    position: center;
+    max-width: 450px;
     padding: 1rem;
-    margin: 0;
+    margin: 5rem;
+    
     border-radius:12px;
     position:center;
-    background: #213633;
+    background: #0b71a7;
 }
 
-p {
+/* "loading*/
+#light p {
     color:#213633;
 }
+#dark p{
+    color: white;
+}
+
+
+.switch label {
+    margin: 5px;
+}
+
+#light .switch label {
+    color: #213633;
+}
+#dark .switch label {
+    color: white;
+}
+
+
+
+
