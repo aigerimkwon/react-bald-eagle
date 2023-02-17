@@ -1,8 +1,6 @@
 .ListItem {
-    color:#213633;
+    color:#009db7;
     list-style-type: none;
-    text-decoration: underline;
-    text-decoration-color: #aec4aa;
 }
 
 .button {
@@ -12,7 +10,8 @@
     z-index: 1;
     cursor: pointer;
     border-radius: 0.3rem;
-    background-color: #aec4aa;
+    background-color: #efa361;
+    color: #0b71a7;
     margin-left: 0.5rem;
     padding-top: 0.2rem;
 }
@@ -24,8 +23,9 @@
 }
 .button:hover {
     box-shadow: inset -2.5em 0 0 0 #202d3f, inset 2.5em 0 0 0  #202d3f;
-    color: #fbe4cc;
+    color: white;
 }
+
 input:focus {
-    outline-color: white;
+    outline-color: #0b71a7;
 }

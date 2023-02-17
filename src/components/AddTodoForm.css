@@ -1,9 +1,9 @@
 
 
 .submitButton {
-    color: #aec4aa;
+    color: #efa361;
     padding: 0.4rem;
-    background-color: #213633;
+    background-color: #0b71a7;
 }
 
 .submitButton {
@@ -26,7 +26,7 @@
 }
 
 h5 {
-    color: red;
+    color: #EA3535;
     font-size: 0.7rem;
     display: flex;
     justify-content:center;

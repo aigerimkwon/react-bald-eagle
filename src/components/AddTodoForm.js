@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InputWithLabel from "./InputWithLabel";
 import "./AddTodoForm.css";
+import PropTypes from "prop-types";
 
 const AddTodoForm = ({ onAddTodo }) => {
   const [todoTitle, setTodoTitle] = useState("");
@@ -35,11 +36,12 @@ const AddTodoForm = ({ onAddTodo }) => {
       <InputWithLabel
         todoTitle={todoTitle}
         handleTitleChange={handleTitleChange}
+        styleOverWrite={{ border: !isValid ? "2px solid #EA3535" : "" }}
       >
         Title
       </InputWithLabel>
       <button
-        style={{ backgroundColor: !isValid ? "red" : "" }}
+        style={{ backgroundColor: !isValid ? "#EA3535" : "" }}
         type="submit"
         className="submitButton"
       >
@@ -48,6 +50,10 @@ const AddTodoForm = ({ onAddTodo }) => {
       {!isValid ? <h5>Please fill out this field!</h5> : ""}
     </form>
   );
+};
+
+AddTodoForm.propTypes = {
+  onAddTodo: PropTypes.func,
 };
 
 export default AddTodoForm;
