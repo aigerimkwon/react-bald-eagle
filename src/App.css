@@ -1,21 +1,22 @@
 
 #light {
     background-color: #fbfcff;
-    background-image: linear-gradient(to bottom right, #fbfcff, #e1edea);
+    background-image: linear-gradient(to bottom right, #fbfcff, #abdbe3);
 }
 #dark {
-    background-color: #0b1e38;
-    background-image: linear-gradient(to bottom right, #192c43, #0b1e38);
+    background-color: #23272f;
+    background-image: linear-gradient(to bottom right, #192c43, #23272f);
 }
 .App {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Salsa', cursive;
     font-size: 1.5rem;
+}
+
+
+.header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: center;
 }
 /* "Todo list" */
 h4 { 
@@ -24,36 +25,6 @@ h4 {
     font-family: 'Princess Sofia', cursive;
 }
 
-#light .paper {
-    background-color: #fbfcff;
-}
-#dark .paper {
-    background-color:  #0b1e38;
-}
-.paper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: center;
-    max-width: 430px;
-    padding: 0.5rem;
-    border-radius: 12px;
-    margin: 0;
-    
-}
-.board {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: center;
-    max-width: 450px;
-    padding: 1rem;
-    margin: 5rem;
-    
-    border-radius:12px;
-    position:center;
-    background: #0b71a7;
-}
 
 /* "loading*/
 #light p {
@@ -63,17 +34,12 @@ h4 {
     color: white;
 }
 
+.switch {
+    display:flex;
+    margin: 1.5rem;
+    padding: 0;
+    }
 
-.switch label {
-    margin: 5px;
-}
-
-#light .switch label {
-    color: #213633;
-}
-#dark .switch label {
-    color: white;
-}
 
 
 

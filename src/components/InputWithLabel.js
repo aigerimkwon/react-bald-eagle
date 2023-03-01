@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Fragment } from "react";
 import PropTypes from "prop-types";
+
 const InputWithLabel = ({
   todoTitle,
   handleTitleChange,
@@ -18,12 +19,14 @@ const InputWithLabel = ({
       <label style={{ color: "#009db7" }} htmlFor="todoTitle">
         {children}
       </label>
+
       <input
         id="todoTitle"
         type="text"
         name="title"
         placeholder="new todo"
         style={{
+          borderRadius: "8px",
           color: "black",
           background: "#fbfcff",
           padding: "0.3rem",
