@@ -7,7 +7,6 @@
 }
 
 .submitButton {
-    position:relative;
     border: none;
     transition: .4s ease-in;
     z-index: 1;

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Salsa&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
 
 
 html {
@@ -10,10 +12,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    min-height: 100vh;
 }
-
-
-
-
 
 
