@@ -6,20 +6,27 @@ import "./TodoContainer.css";
 const sortCategories = [
   {
     label: "Title 'A-Z'",
+    value: "az",
     sortMethod: (objectA, objectB) => {
-      if (objectA.fields.Title < objectB.fields.Title) {
+      const a = objectA.fields.Title.toLowerCase();
+      const b = objectB.fields.Title.toLowerCase();
+
+      if (a < b) {
         return -1;
-      } else if (objectA.fields.Title > objectB.fields.Title) {
+      } else if (a > b) {
         return 1;
       } else return 0;
     },
   },
   {
     label: "Title 'Z-A'",
+    value: "za",
     sortMethod: (objectA, objectB) => {
-      if (objectA.fields.Title > objectB.fields.Title) {
+      const a = objectA.fields.Title.toLowerCase();
+      const b = objectB.fields.Title.toLowerCase();
+      if (a > b) {
         return -1;
-      } else if (objectA.fields.Title < objectB.fields.Title) {
+      } else if (a < b) {
         return 1;
       } else return 0;
     },

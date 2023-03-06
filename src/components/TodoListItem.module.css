@@ -4,7 +4,6 @@
 }
 
 .button {
-    position:relative;
     border: none;
     transition: .4s ease-in;
     z-index: 1;
@@ -29,3 +28,17 @@
 input:focus {
     outline-color: #0b71a7;
 }
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape), smartphones
+  ##Screen = B/w 320px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .ListItem {
+        margin: 0;
+        font-size: 1rem;
+    }
+   }
+
